@@ -1,0 +1,633 @@
+/*موبایل*/
+@media screen and (max-width: 767px) {
+  /* هدر */
+
+  .header-rgiht img {
+    width: 120px;
+    max-width: 100%;
+  }
+
+  .btn-menu-m {
+    width: 39px !important;
+    border-radius: 16px !important;
+  }
+
+  .sigmaweb-search-icon {
+    width: 39px;
+    border-radius: 16px;
+  }
+
+  .user-link {
+    width: 39px;
+    aspect-ratio: 1;
+    border-radius: 16px;
+    padding: inherit;
+    font-size: 19px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .user-link span {
+    display: none;
+  }
+  .user-link i {
+    display: block;
+  }
+
+  .header-rgiht {
+    width: max-content;
+  }
+
+  .header-left {
+    width: max-content;
+    column-gap: 8px;
+  }
+
+  #search {
+    width: 80%;
+  }
+
+  /* هیروسکشن */
+  .hero-section {
+    height: 576px;
+  }
+
+  .img-happy-customer,
+  .img-variety-products {
+    display: none;
+  }
+
+  .title-hero-section {
+    font-size: 24px;
+  }
+
+  img.img-camp {
+    margin-top: inherit;
+  }
+
+  .hero-section .btn-view-products {
+    width: 90%;
+    order: 1;
+    margin-bottom: 0;
+  }
+
+  /* دسته محصولات */
+
+  .home-category-products h2 {
+    padding-top: 24px;
+    font-size: 19px;
+  }
+
+  .home-category-products-wrapper {
+    margin-top: -71px;
+  }
+
+  .ventura-category-products-slide .swiper-wrapper {
+    padding-block: 15px;
+  }
+
+  /* معرفی محصولات */
+  .product-intro p {
+    font-size: 15px;
+    text-align: justify;
+  }
+
+  /* پیشنهاد شگفت انگیز  */
+  .discount-header .discount-title {
+    font-size: 23px;
+  }
+
+  .discount-header .discount-timer {
+    height: 100px;
+  }
+
+  .discount-header .timer-item span:nth-child(1) {
+    width: 44px;
+    line-height: 44px;
+    font-size: 22px;
+  }
+
+  .discount-header .timer-item span:nth-child(2) {
+    font-size: 12px;
+  }
+
+  .discount-products {
+    flex-direction: column;
+  }
+
+  .discount-header {
+    align-self: flex-start;
+    width: 90%;
+    border-bottom-left-radius: 60px;
+    padding-block: 10px;
+  }
+
+  .discount-header .discount-timer,
+  .navigation-discount-products-slider {
+    margin-top: 25px;
+  }
+
+  .discount-products .products-box {
+    width: 100%;
+    padding-left: inherit;
+  }
+
+  .discount-products-wrapper {
+    margin-bottom: 210px;
+  }
+
+  .ventura-discount-products-slide {
+    padding-bottom: 5px !important;
+  }
+
+  .slider-products-content img {
+    width: 330px;
+    height: 220px;
+    object-fit: cover;
+  }
+
+  /* اطلاعات محصول منتخب */
+  .backpack-box {
+    flex-direction: column;
+  }
+
+  .backpack-info img:nth-child(1) {
+    top: -19px;
+  }
+
+  .backpack-info img:nth-child(2) {
+    display: none;
+  }
+
+  .backpack-title {
+    font-size: 29px;
+  }
+
+  .backpack-title span {
+    font-size: 33px;
+  }
+
+  .backpack-text {
+    width: inherit;
+    font-size: 15px;
+    text-align: justify;
+  }
+
+  .backpack-box .btn-view-products {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .btn-view-products {
+    justify-content: center;
+  }
+
+  /* محصولات پرفروش */
+
+  .bestseller-content h2 {
+    font-size: 17px;
+  }
+
+  .btn-view-product-bestseller {
+    font-size: 13px;
+  }
+  .bestseller-section {
+    margin-block: 30px;
+  }
+
+  /* برندها */
+  .brands-container > div {
+    width: 90%;
+  }
+
+  .brands-section {
+    margin-bottom: 30px;
+  }
+  .brands-container span {
+    font-size: 50px;
+    letter-spacing: 15px;
+    margin-bottom: -10px;
+  }
+
+  /* بلاک */
+  .blog-container {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 25px;
+  }
+
+  .article-list-left {
+    row-gap: 20px;
+  }
+
+  .blog-content-center h2 {
+    font-size: 19px;
+  }
+
+  .article-item-left h2 {
+    font-size: 14px;
+  }
+
+  .article-item-left i {
+    width: 40px;
+    height: 40px;
+  }
+
+  .article-item-left i::before {
+    font-size: 24px;
+  }
+
+  a.btn-view-blog {
+    width: 100%;
+    justify-content: center;
+  }
+
+  section.container.blog-section {
+    margin: inherit;
+  }
+
+  /* فوتر */
+
+  .container-ewsletter {
+    width: 90%;
+    top: 60px;
+    padding: 20px;
+  }
+
+  .ewsletter-box {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  .container-footer {
+    padding-top: 200px !important;
+    flex-wrap: wrap;
+    padding: inherit;
+  }
+
+  .footer-col {
+    order: -1;
+  }
+
+  .footer-col span {
+    font-size: 16px;
+  }
+
+  .footer-col li {
+    font-size: 14px;
+  }
+
+  .footer-logo {
+    margin-block: 20px;
+  }
+
+  .footer-logo span {
+    font-size: 16px;
+  }
+
+  .social-footer i {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 23px;
+  }
+}
+
+/*تبلت*/
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  /* هدر */
+  .header-rgiht img {
+    width: 140px;
+    max-width: 100%;
+  }
+
+  .header-rgiht {
+    width: 60%;
+  }
+
+  .header-left {
+    width: 40%;
+    justify-content: flex-end;
+  }
+
+  .header-left a {
+    font-size: 14px;
+  }
+
+  .sigmaweb-search-icon {
+    width: 41px;
+  }
+
+  /* هیروسکشن */
+  .hero-section {
+    height: 813px;
+  }
+
+  .img-happy-customer {
+    left: 11px;
+    top: 68px;
+  }
+
+  .img-variety-products {
+    right: -12px;
+    top: 141px;
+  }
+
+  .img-happy-customer,
+  .img-variety-products {
+    width: 220px;
+  }
+
+  /* دسته محصولات */
+  .ventura-category-products-slide .swiper-slide-next {
+    margin-left: 25px !important;
+  }
+
+  .home-category-products h2 {
+    padding-top: 62px;
+  }
+
+  /* پیشنهاد شگفت انگیز  */
+  .ventura-discount-products-slide {
+    padding-inline: 4px !important;
+  }
+
+  .discount-header {
+    border-radius: 25px 0 0 25px;
+    background-position: top right;
+  }
+
+  .discount-header .discount-title {
+    font-size: 20px;
+  }
+
+  .discount-header .discount-timer {
+    width: 186px;
+    column-gap: 12px;
+  }
+
+  .discount-header .timer-item span:nth-child(1) {
+    width: 44px;
+    height: 44px;
+    line-height: 44px;
+    font-size: 23px;
+  }
+
+  .discount-header .discount-timer::after {
+    width: 125px;
+  }
+
+  /* اطلاعات محصول منتخب */
+  .backpack-title {
+    font-size: 31px;
+  }
+
+  .backpack-title span {
+    font-size: 33px;
+  }
+
+  .backpack-title span::before {
+    height: 14px;
+    bottom: 13px;
+  }
+
+  .backpack-info img:nth-child(2) {
+    left: 79px;
+  }
+
+  .backpack-text {
+    font-size: 15px;
+  }
+
+  /* محصولات پرفروش */
+
+  .bestseller-content h2 {
+    font-size: 19px;
+  }
+
+  .btn-view-product-bestseller {
+    font-size: 14px;
+  }
+
+  /* بلاک */
+  .blog-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .blog-rgiht {
+    grid-column: 1/2;
+  }
+  .blog-center {
+    width: 350px;
+    grid-column: 2/3;
+  }
+
+  .blog-left {
+    width: 100%;
+    grid-column: 1/3;
+    margin-top: 30px;
+  }
+
+  .article-list-left {
+    gap: 10px;
+  }
+
+  /* باکس وسط */
+  .blog-content-center h2 {
+    font-size: 19px;
+  }
+
+  .article-item-left h2 {
+    font-size: 15px;
+  }
+
+  /* فوتر */
+  .container-ewsletter {
+    width: 460px;
+    top: -33px;
+  }
+
+  .ewsletter-box span {
+    font-size: 15px;
+  }
+
+  .footer-col span {
+    font-size: 17px;
+  }
+
+  .footer-col li {
+    font-size: 15px;
+  }
+
+  .footer-logo span {
+    font-size: 18px;
+  }
+
+  .footer-logo img {
+    width: 186px;
+  }
+
+  .social-footer i {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 21px;
+  }
+}
+
+/*موبایل-تبلت*/
+@media screen and (max-width: 1024px) {
+  /* هدر */
+  .header-menu {
+    display: none;
+  }
+
+  .header-rgiht {
+    column-gap: 7px;
+  }
+
+  .btn-menu-m {
+    border: none;
+    width: 41px;
+    aspect-ratio: 1;
+    border-radius: 8px;
+    font-size: 19px;
+    font-weight: bold;
+    background-color: var(--neutral-color3);
+    display: block;
+    border-radius: 18px;
+  }
+  .btn-menu-m.active {
+    background-color: red;
+    color: var(--white-color);
+    margin-right: -10px;
+  }
+
+  .menu-m {
+    width: 70%;
+    height: 100%;
+    background-color: var(--white-color);
+    color: #fff;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    transition: 0.3s linear;
+    z-index: 10;
+    opacity: 0;
+    visibility: hidden;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+  }
+
+  .menu-m.active {
+    right: 0;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .menu-m nav {
+    margin-top: 85px;
+    margin-inline: 10px;
+  }
+
+  .menu-m ul {
+    list-style: none;
+  }
+
+  .menu-m nav > ul > li {
+    margin-bottom: 10px;
+    font-size: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--neutral-color2);
+  }
+
+  .category-menu-m li {
+    margin-bottom: 7px;
+    font-size: 14px;
+  }
+  .category-menu-m li:first-child {
+    margin-top: 7px;
+  }
+
+  .menu-m nav > ul li:last-child {
+    margin-bottom: 0 !important;
+  }
+
+  .category-menu-m a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .category-menu-m.active > a,
+  .category-menu-m.active i::before {
+    color: var(--primary-color);
+  }
+
+  .category-menu-m.active i {
+    transform: rotate(180deg);
+  }
+
+  .category-menu-m ul {
+    display: none;
+    margin-right: 8px;
+  }
+
+  /* هیروسکشن */
+
+  .images-hero-section::before,
+  .images-hero-section::after {
+    display: none;
+  }
+
+  .btn-view-products {
+    font-size: 14px;
+  }
+
+  /* دسته محصولات */
+  .ventura-category-products-slide {
+    margin-top: -20px;
+  }
+
+  /* معرفی محصولات */
+  .product-intro p {
+    width: 635px;
+  }
+
+  /* پیشنهاد شگفت انگیز  */
+  .discount-products-wrapper {
+    padding: 0;
+  }
+
+  /* اطلاعات محصول منتخب */
+
+  .backpack-info img:nth-child(1) {
+    width: 129px;
+    opacity: 0.5;
+    right: 0;
+    z-index: -1;
+  }
+}
+
+@media screen and (min-width: 879px) and (max-width: 1024px) {
+  /* هیروسکشن */
+  .hero-section {
+    height: 892px;
+  }
+}
+
+@media screen and (min-width: 879px) and (max-width: 1024px) {
+  /* هیروسکشن */
+  .img-happy-customer {
+    left: 41px;
+  }
+
+  .img-variety-products {
+    right: 17px;
+  }
+}
+
+/*دسکتاپ*/
+@media screen and (min-width: 1025px) {
+  .menu-m {
+    display: none;
+  }
+}

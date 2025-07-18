@@ -1,0 +1,906 @@
+.submenu-open {
+  background: #5d5c5c6a;
+  backdrop-filter: blur(5px);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  inset: 0;
+}
+
+/* شروع هیروسکشن */
+.hero-section {
+  height: 892px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: -80px;
+  background-image: url("../images/bg-hero-section.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  row-gap: 23px;
+}
+
+.title-hero-section {
+  font-size: 34px;
+  text-align: center;
+}
+
+.title-hero-section span {
+  color: var(--primary-color);
+}
+
+.btn-view-products,
+.btn-view-blog {
+  background-color: var(--text-color);
+  color: var(--white-color);
+  border-radius: var(--border-radius-btn);
+  display: flex;
+  align-items: center;
+  padding: 7px 10px;
+  column-gap: 4px;
+}
+
+.img-camp {
+  width: 1090px;
+  max-width: 100%;
+  mix-blend-mode: darken;
+  margin-top: -40px;
+  position: relative;
+  z-index: 1;
+}
+
+.img-variety-products {
+  position: absolute;
+  right: 155px;
+  bottom: 229px;
+  z-index: 1;
+}
+
+.img-happy-customer {
+  position: absolute;
+  left: 195px;
+  bottom: 328px;
+  z-index: 1;
+}
+
+.images-hero-section {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.images-hero-section::before,
+.images-hero-section::after {
+  content: "";
+  width: 28%;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.images-hero-section::before {
+  background-image: url("../images/svg/line3.svg");
+  height: 255px;
+  bottom: 355px;
+  right: -12px;
+  background-position: right;
+}
+
+.images-hero-section::after {
+  background-image: url("../images/svg/line2.svg");
+  height: 104px;
+  bottom: 153px;
+  left: 0;
+  background-position: left;
+}
+
+#variety-of-products,
+#happy-customer {
+  transition: transform 0.3s ease-out;
+}
+/* پایان هیروسکشن */
+
+/* شروع لیست محصولات */
+.home-category-products-wrapper {
+  margin-top: -151px;
+  overflow: hidden;
+}
+
+.home-category-products {
+  background-image: url("../images/svg/bg-product-category.svg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: contain;
+}
+
+.home-category-products h2 {
+  color: #fff;
+  text-align: center;
+  padding-top: 90px;
+}
+
+/* شروع اسلایدر */
+.home-category-products .swiper {
+  width: 87%;
+  height: 100%;
+}
+
+.ventura-category-products-slide {
+  padding: 14px !important;
+}
+
+.ventura-category-products-slide .swiper-wrapper {
+  padding: 24px 3px;
+}
+
+.ventura-category-products-slide .swiper-slide {
+  max-width: 100% !important;
+}
+
+.slider-category-products-content {
+  max-width: 100% !important;
+  height: 257px;
+  text-align: center;
+  font-size: 18px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 45px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.06);
+}
+
+.ventura-category-products-slide img {
+  width: 166px;
+  aspect-ratio: 1;
+}
+
+.ventura-category-products-slide h3 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.navigation-category-products-slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.btn-navigation {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/* پایان اسلایدر */
+/* پایان لیست محصولات */
+
+/* شروع معرفی محصولات */
+.product-intro {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.product-intro p {
+  width: 795px;
+  text-align: center;
+  line-height: 2.2rem;
+}
+/* پایان معرفی محصولات */
+
+/* شروع پیشنهاد شگفت انگیز */
+.discount-products-wrapper {
+  margin-bottom: 80px;
+}
+
+.discount-products {
+  height: 536px;
+  background-image: url(../images/svg/bg-discount-products.svg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* شروع تایمر */
+.discount-header {
+  width: 30%;
+  height: 448px;
+  background-image: url(../images/svg/bg-discount-timer.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.discount-header .discount-title {
+  text-align: center;
+  color: var(--white-color);
+  font-weight: 700;
+  font-size: 26px;
+}
+
+.discount-header .discount-timer {
+  height: 110px;
+  width: 256px;
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 30px;
+  background-color: #fff;
+  border-radius: 24px;
+  justify-content: center;
+  align-items: center;
+  column-gap: 40px;
+  position: relative;
+}
+
+.discount-header .discount-timer::after {
+  content: "";
+  width: 155px;
+  height: 8px;
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  transform: translateX(50%);
+  background-color: var(--auxiliary-color1);
+  border-radius: 25px 25px 0 0;
+}
+
+.discount-header .timer-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 5px;
+}
+.discount-header .timer-item span:nth-child(1) {
+  width: 48px;
+  color: var(--auxiliary-color1);
+  background-color: var(--auxiliary-color2);
+  border: 1px solid var(--auxiliary-color1);
+  aspect-ratio: 1;
+  text-align: center;
+  line-height: 46px;
+  font-weight: 600;
+  font-size: 27px;
+  border-radius: 17px;
+}
+
+.discount-header .timer-item span:nth-child(2) {
+  font-size: 13px;
+  font-weight: 500;
+}
+/* پایان تایمر */
+
+/* شروع باکس محصولات */
+
+.ventura-discount-products-slide .swiper-slide {
+  padding: 0px !important;
+}
+
+.ventura-discount-products-slide {
+  padding-inline: 10px !important;
+}
+
+.discount-products .products-box {
+  width: 70%;
+  padding-left: 20px;
+}
+
+/* اسلایدر */
+.products-box .swiper {
+  width: 100%;
+  height: 100%;
+}
+.ventura-products-slide .swiper-wrapper {
+  padding-block: 8px;
+}
+
+.ventura-products-slide .swiper-slide {
+  width: 272px;
+  padding: 15px;
+}
+
+.slider-products-content {
+  max-width: 100%;
+  height: 382px;
+  background-color: var(--white-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 48px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0px 0px 8px rgb(153 153 153 / 25%);
+}
+
+/* درصد تخفیف */
+.slider-products-content .discount {
+  width: 66px;
+  height: 37px;
+  position: absolute;
+  top: 24px;
+  left: 20px;
+  border-radius: 24px;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  text-align: center;
+  line-height: 30px;
+  border: 5px solid var(--secondary-color);
+}
+
+/* تصویر محصول */
+.slider-products-content img {
+  width: 210px;
+  aspect-ratio: 1;
+}
+
+/* عنوان */
+.title-product-box {
+  align-self: flex-start;
+  font-size: 15px;
+  padding-inline: 17px;
+  margin-bottom: 9px;
+  width: auto;
+  font-size: 15px;
+}
+.title-product-box a,
+.blog-content-rgiht a {
+  transition: color 0.3s linear;
+}
+
+.title-product-box a:hover,
+.blog-content-rgiht a:hover {
+  color: var(--primary-color);
+}
+
+/* امتیاز */
+.product-rating {
+  align-self: flex-start;
+  padding-right: 17px;
+  margin-bottom: 9px;
+}
+
+.product-rating span {
+  font-weight: bold;
+}
+.product-rating span,
+.product-rating i::before {
+  color: var(--auxiliary-color1);
+  font-size: 17px;
+}
+
+/* قیمت */
+.product-action {
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 17px;
+}
+
+.slider-price {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.product-action button {
+  width: 50px;
+  aspect-ratio: 1;
+  background-color: var(--neutral-color3);
+  border: none;
+  line-height: 0;
+  border-radius: 21px;
+  cursor: pointer;
+  transition: 0.3s linear;
+}
+
+.slider-products-content:hover .product-action button {
+  background-color: var(--auxiliary-color1);
+}
+.slider-products-content:hover .product-action button path {
+  stroke: var(--white-color) !important;
+}
+.slider-products-content:hover .product-action button circle {
+  fill: var(--white-color) !important;
+}
+
+/* قیمت */
+.product-price-old {
+  color: #b2b4c2;
+  font-weight: 500;
+  font-size: 15px;
+}
+.product-price-old span {
+  color: inherit;
+  font-size: 13px;
+}
+
+.product-price-new {
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: 17px;
+  text-decoration: none;
+}
+
+.product-price-new span {
+  color: inherit;
+  font-size: 14px;
+}
+
+.navigation-discount-products-slider {
+  display: flex;
+  column-gap: 30px;
+  margin-top: 40px;
+}
+/* پایان باکس محصولات */
+/* پایان پیشنهاد شگفت انگیز */
+
+/*شروع اطلاعات محصول منتخب*/
+.backpack-box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.backpack-image img {
+  width: 397px;
+  max-width: 100%;
+}
+
+/* اطلاعات */
+.backpack-info {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  row-gap: 20px;
+  position: relative;
+}
+
+.backpack-info img:nth-child(1) {
+  position: absolute;
+  width: 116px;
+  aspect-ratio: 1;
+  right: -81px;
+  top: -37px;
+}
+.backpack-info img:nth-child(2) {
+  position: absolute;
+  width: 56px;
+  aspect-ratio: 1;
+  left: -11px;
+  top: 53px;
+}
+
+/* عنوان */
+.backpack-title {
+  font-size: 35px;
+}
+
+.backpack-title span {
+  color: var(--primary-color);
+  font-size: 46px;
+  position: relative;
+}
+
+.backpack-title span::before {
+  content: "";
+  width: 100%;
+  height: 20px;
+  background-color: var(--secondary-color);
+  position: absolute;
+  bottom: 20px;
+  right: 50%;
+  transform: translateX(50%);
+  border-radius: 25px;
+  z-index: -1;
+}
+
+/* توضیحات */
+.backpack-text {
+  width: 428px;
+  font-size: 16px;
+  font-weight: 500;
+}
+/*پایان اطلاعات محصول منتخب*/
+
+/* شروع محصولات پرفروش */
+.bestseller-section {
+  margin-block: 50px;
+}
+
+.bestseller-content > div {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  column-gap: 20px;
+}
+
+.bestseller-content .products-box {
+  margin-top: 20px;
+}
+
+.bestseller-content h2 {
+  font-size: 22px;
+}
+
+hr.bestseller-hr-flex {
+  width: auto;
+  height: 3.5px;
+  flex-grow: 1;
+  border: none;
+  background-color: var(--neutral-color3);
+}
+
+.btn-view-product-bestseller {
+  background-color: var(--primary-color);
+  border-radius: var(--border-radius-btn);
+  color: var(--white-color);
+  display: flex;
+  align-items: center;
+  column-gap: 4px;
+  padding: 6px 10px;
+}
+
+.bestseller-nav-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 20px;
+  margin-top: 15px;
+}
+
+.navigation-bestseller-products-slider {
+  display: flex;
+  column-gap: 20px;
+}
+
+.pagination-bestseller-products-slider .swiper-pagination {
+  width: auto !important;
+}
+
+.pagination-bestseller-products-slider .swiper-pagination-bullet {
+  width: 9px;
+  height: 8px;
+  background-color: #6d6d6f;
+  transition: all 0.4s ease;
+}
+.pagination-bestseller-products-slider .swiper-pagination-bullet-active {
+  width: 38px;
+  background-color: var(--text-color);
+  border-radius: 25px;
+}
+/* پایان محصولات پرفروش */
+
+/* شروع بخش برندها */
+.brands-section {
+  margin-bottom: 50px;
+}
+
+.brands-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+.brands-container {
+  background-color: var(--secondary-color);
+  padding: 25px 0 45px;
+}
+
+.brands-container > div {
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.brands-container figure {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-rows: auto;
+  align-items: center;
+  justify-content: center;
+  gap: 25px 20px;
+}
+
+.brand-item {
+  width: 100%;
+  height: 90px;
+  background-color: var(--white-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0px 4px 64px rgba(41, 65, 115, 0.08);
+}
+
+.brand-item a::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+}
+
+.brand-image {
+  width: 125px;
+}
+
+.brands-container span {
+  font-size: 80px;
+  font-weight: bold;
+  letter-spacing: 0.56em;
+  margin-bottom: -60px;
+  background: linear-gradient(
+    180deg,
+    rgba(109, 169, 117, 0.14) 0%,
+    rgba(109, 169, 117, 0) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/* پایان بخش برندها */
+
+/*شروع بلاگ*/
+
+.blog-title {
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.blog-section {
+  margin-bottom: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.blog-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  column-gap: 20px;
+  align-items: stretch;
+  margin-bottom: 20px;
+}
+
+/* سمت راست */
+.blog-rgiht {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  row-gap: 20px;
+}
+
+.blog-card-rgiht {
+  display: flex;
+  align-items: center;
+  column-gap: 14px;
+  background-color: var(--white-color);
+  border: 1px solid #cfd2e3;
+  border-radius: 32px;
+  padding: 7px;
+}
+
+.blog-img-rgiht {
+  width: 30%;
+}
+
+.blog-img-rgiht img {
+  width: 100% !important;
+  border-radius: 22px;
+}
+
+.blog-content-rgiht {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 8px;
+}
+
+.reading-time {
+  column-gap: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.blog-content-rgiht .reading-time span,
+.blog-content-rgiht .reading-time i::before {
+  color: var(--neutral-color1);
+  font-size: 13px;
+}
+
+.post-category {
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  font-size: 13px;
+  padding: 3px 12px;
+  border-radius: 10px;
+  transition: 0.3s linear;
+}
+.post-category:hover {
+  color: var(--secondary-color) !important;
+  background-color: var(--primary-color);
+}
+
+.blog-content-rgiht h2 {
+  font-size: 14px;
+}
+
+/* وسط */
+.blog-card-center {
+  position: relative;
+  overflow: hidden;
+}
+.blog-card-center:hover .blog-img-center::before {
+  backdrop-filter: blur(3px);
+  background-color: #3d39394d;
+}
+
+.blog-img-center {
+  position: relative;
+  border-radius: 32px;
+  overflow: hidden;
+}
+
+.blog-img-center::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+  background-color: #3d393929;
+  transition: all 0.3s ease;
+}
+
+.blog-card-center img {
+  width: 100%;
+  height: 100%;
+}
+
+.blog-content-center {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(
+    180deg,
+    rgba(109, 169, 117, 0) 0%,
+    rgba(96, 156, 104, 0.75) 100%
+  );
+  overflow: hidden;
+  border-radius: 32px;
+  padding: 0 10px 15px;
+}
+
+.blog-content-center h2 {
+  font-size: 22px;
+}
+
+.blog-content-center .reading-time {
+  margin-top: 5px;
+}
+
+.blog-content-center h2,
+.blog-content-center .reading-time span,
+.blog-content-center .reading-time i::before {
+  color: var(--white-color);
+}
+
+.blog-content-center > div:first-child {
+  width: 82%;
+}
+
+.blog-content-center > div:last-child {
+  width: 13%;
+}
+
+.blog-content-center .fa-arrow-left-long {
+  width: 42px;
+  aspect-ratio: 1;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.blog-card-center:hover .fa-arrow-left-long::before {
+  transform: rotate(0);
+}
+
+.blog-content-center .fa-arrow-left-long::before {
+  color: var(--white-color);
+  font-size: 24px;
+  transform: rotate(36deg);
+  transition: transform 0.3s ease;
+}
+
+/* سمت چپ */
+.article-list-left {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.article-item-left {
+  list-style: none;
+  border: 1px solid #cfd2e3;
+  border-radius: 32px;
+  width: 100%;
+  height: 76px;
+  display: flex;
+  overflow: hidden;
+}
+
+.article-item-left a {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding: 0 10px;
+}
+
+.article-item-left a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.article-item-left h2 {
+  font-size: 16px;
+  transition: color 0.3s linear;
+}
+.article-item-left:hover h2 {
+  color: var(--primary-color);
+}
+
+.article-item-left i {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--secondary-color);
+  border-radius: 17px;
+}
+.article-item-left i::before {
+  color: var(--primary-color);
+  font-size: 27px;
+  transform: rotate(36deg);
+  transition: transform 0.3s linear;
+}
+
+.article-item-left:hover i::before {
+  transform: rotate(0);
+}
+/* پایان بلاگ */
