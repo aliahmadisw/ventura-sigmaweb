@@ -1,0 +1,70 @@
+@font-face {
+  font-family: "Estedad";
+  src: url("../fonts/Estedad.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+:root {
+  --text-color: #081035;
+  --white-color: #fff;
+  --border-radius-btn: 9999px;
+  --primary-color: #6da975;
+  --secondary-color: #e4f6e7;
+  --auxiliary-color1: #ffa700;
+  --auxiliary-color2: #ffeac2;
+  --neutral-color1: #747893;
+  --neutral-color2: #ecedf4;
+  --neutral-color3: #f5f6f9;
+  --line-height: 1.8;
+}
+
+*,
+*::after,
+*::before {
+  font-family: "Estedad", sans-serif;
+  outline: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--text-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: #fff;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.container {
+  max-width: 1224px;
+  padding: 0 10px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+i.fa-solid::before {
+  font-family: "Font Awesome 6 Free" !important;
+}
+
+i.fa-brands::before {
+  font-family: "Font Awesome 6 Brands" !important;
+}
+
+/*حذف هایلایت آبی هنگام لمس*/
+a,
+button {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
