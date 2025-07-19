@@ -35,6 +35,42 @@ $(document).ready(function () {
     $(".box-search").removeClass("active");
   });
 
+  // تایمر
+  let hours = 23;
+  let minutes = 15;
+  let seconds = 4;
+
+  function timer_format(n) {
+    return n < 10 ? "0" + n : n;
+  }
+
+  let timer = setInterval(function () {
+    if (hours === 0 && minutes === 0 && seconds === 0) {
+      hours = 23;
+      minutes = 15;
+      seconds = 4;
+      return;
+    }
+
+    if (seconds === 0) {
+      seconds = 59;
+      if (minutes === 0) {
+        minutes = 59;
+        if (hours > 0) {
+          hours--;
+        }
+      } else {
+        minutes--;
+      }
+    } else {
+      seconds--;
+    }
+
+    $(".timer-hours").text(timer_format(hours));
+    $(".timer-minutes").text(timer_format(minutes));
+    $(".timer-seconds").text(timer_format(seconds));
+  },1000);
+
   // منو موبایل
   $(".btn-menu-m").click(function () {
     $(".menu-m").toggleClass("active");
@@ -151,3 +187,5 @@ var swiperDiscount = new Swiper(".ventura-bestseller-products-slide", {
     },
   },
 });
+
+/**************/
